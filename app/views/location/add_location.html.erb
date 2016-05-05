@@ -1,0 +1,30 @@
+<%= form_tag("/search", method: "get",
+    remote: true) do %>
+      <%= label_tag(:address, "Address:") %>
+      <%= text_field_tag(:address) %>
+      <%= label_tag(:permitID, "Permit ID:") %>
+      <%= text_field_tag(:permitID) %>
+      <%= label_tag(:typeCode, "Type Code:") %>
+      <%= text_field_tag(:typeCode) %>
+      <%= label_tag(:typeName, "Type Name:") %>
+      <%= text_field_tag(:typeName) %>
+      <%= label_tag(:appDes, "Application Description:") %>
+      <%= text_field_tag(:appDes) %>
+      <%= label_tag(:dateIssued, "Date Issued") %>
+      <%= text_field_tag(:dateIssued) %>
+      <%= label_tag(:status, "Status:") %>
+      <%= text_field_tag(:status) %>
+      <%= label_tag(:conName, "Contractor Name:") %>
+      <%= text_field_tag(:conName) %>
+      <%= label_tag(:conAddr1, "Contractor Address 1:") %>
+      <%= text_field_tag(:conAddr1) %>
+      <%= label_tag(:city, "Contractor City:") %>
+      <%= text_field_tag(:city) %>
+      <%= label_tag(:state, "Contractor State:") %>
+      <%= text_field_tag(:state) %>
+      <%= label_tag(:zip, "Contractor Zipcode:") %>
+      <%= text_field_tag(:zip) %>
+      <%= submit_tag("Add Location") %>
+<% end %>
+
+<%= link_to "Back", root_url %>
